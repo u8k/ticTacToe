@@ -1,0 +1,120 @@
+body {
+  margin: 0px;
+  background-color: #4B4B5B;
+  background: linear-gradient(to bottom right, #4B4B5B, #744B5B);
+  overflow: hidden;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#score {
+  color: #DBDBDB;
+  opacity: .65;
+  position: relative;
+  font-size: 3vmax;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.result {
+  font-size: 36vmin;
+  position: relative;
+  top: 45vh;
+  left: 0%;
+  transform: translateY(-50%);
+}
+#win {font-size: 40vmin;
+  color: white;
+}
+#lose {color: Red;}
+#cats {color: #DBDBDB;}
+
+#or {color: #DBDBDB; opacity: .85;}
+#x,#o {
+  font-size: 30vh;
+  font-family: sans-serif;
+  width: 20vh;
+  margin: auto;
+  position: relative;
+}
+#x {
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+}
+#o {
+  margin-top: -2vh;
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#gameBoard {
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+}
+@media only screen and (orientation: portrait) {
+  #gameBoard {
+    width: 100vw;
+    height: 100vw
+  }
+  #container {
+    flex-direction: column;
+  }
+}
+
+
+
+.front {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+}
+.cell {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-7%);
+  font-size: 35vmin;
+  font-family: sans-serif;
+}
+.backing {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background: #744B5B;
+  background: linear-gradient(to bottom right, #964E6B, #76768E);
+}
+.f0, .c0, .b0 {left: 3%; top: 3%;}
+.f1, .c1, .b1 {left: 35%; top: 3%;}
+.f2, .c2, .b2 {left: 67%; top: 3%;}
+.f3, .c3, .b3 {left: 3%; top: 35%;}
+.f4, .c4, .b4 {left: 35%; top: 35%;}
+.f5, .c5, .b5 {left: 67%; top: 35%;}
+.f6, .c6, .b6 {left: 3%; top: 67%;}
+.f7, .c7, .b7 {left: 35%; top: 67%;}
+.f8, .c8, .b8 {left: 67%; top: 67%;}
+
+.xColor {color: #FFD89B;}
+.xBack {background: #C1475D;}
+.oColor {color: #FFDFFF;}
+.oBack {background: #928BD3;}
+
+.highlight {color: white;}
+.backlight {background-color: #8BC1E0}
+
+.clicky {cursor: pointer;}
+
+.hide {display: none;}
